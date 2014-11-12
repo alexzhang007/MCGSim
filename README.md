@@ -1,11 +1,11 @@
-# Mobile Computer Graphics Simulator (MCGSim)
+## Mobile Computer Graphics Simulator (MCGSim)
 
-URL Source : http://cs.lth.se/eda075 
-Purpose    : compile the Microsoft Visual Solution version into Linux version
-Modifier   : Alex Zhang (cgzhangwei@gmail.com)
-Date       : 11-11-2014
+URL Source : http://cs.lth.se/eda075  <br>
+Purpose    : compile the Microsoft Visual Solution version into Linux version <br>
+Modifier   : Alex Zhang (cgzhangwei@gmail.com) <br>
+Date       : 11-11-2014 <br>
 
-# Compile under Codeblocks
+### Compile under Codeblocks
 
 1. C++ exception compile error using g++ compiler
    solution : declare and definition function to be void* operator new (size_t ) throw (std::bad_alloc); 
@@ -16,17 +16,17 @@ Date       : 11-11-2014
    Project-> Build Option -> Linker settings :
    change the Link libraries : to the *.lib files. cpp files still cannot find the correct link functions
 
-# Reorganized Hierarchy
+### Reorganized Hierarchy
 
-+---util     : original cpp and h under main
-+---scenes   : all scene
-+---textures : picture
-+---GL       : opengl glut.h
-+---IL       : download from sourceforge to compile the library file and copy it here. 
-+---raster   : graphics rasterize pipeline
-+---mmgr     : memory management statistics
++---util     : original cpp and h under main <br>
++---scenes   : all scene <br>
++---textures : picture <br>
++---GL       : opengl glut.h <br>
++---IL       : download from sourceforge to compile the library file and copy it here.  <br>
++---raster   : graphics rasterize pipeline <br>
++---mmgr     : memory management statistics <br>
 
-# Compiler under Linux
+### Compiler under Linux
 
 1. Generate the libmmgr.so and mv it to LIBRARY_DIR
 2. make under the sub-directory under scenes to change it to depend the standard GL library
@@ -40,7 +40,7 @@ Date       : 11-11-2014
 5. modify the (ILvoid) to ()
 6. add the LIDBRARY_DIR into LD_LIBRARY_PATH
 
-# How to run
+### How to run
 
 1. make ;
 2. ./gpu_sw 
