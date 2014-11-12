@@ -1,0 +1,1 @@
+g++ -O3 -m32 -I  ../.. -I /usr/include -I  ../../util -I  ../../raster -fPIC -c IsectTrisScene.cpp -o IsectTrisScene.o
